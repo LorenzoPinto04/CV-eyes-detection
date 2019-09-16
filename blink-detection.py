@@ -12,6 +12,9 @@ import time
 from scipy.spatial import distance
 
 detector = dlib.get_frontal_face_detector()
+
+
+# download pretrained model from: https://github.com/AKSHAYUBHAT/TensorFace/blob/master/openface/models/dlib/shape_predictor_68_face_landmarks.dat
 predictor = dlib.shape_predictor('./shape_predictor_68_face_landmarks.dat')
 
 def totuple(a):
